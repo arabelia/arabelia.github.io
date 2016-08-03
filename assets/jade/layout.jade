@@ -1,0 +1,35 @@
+include mixin.jade
+doctype html
+html(lang='es-PE')
+	include head.jade
+	body.centrar
+		
+		//-header
+		.entrada
+			.row.foto
+				.foto1.enlinea.rotar
+					img(src='../images/foto2.jpg')
+				.foto2.enlinea.rotar2
+					img(src='../images/foto2.jpg')
+				.foto3.enlinea.rotar3
+					img(src='../images/foto2.jpg')
+			.row
+				.nombre
+					span.efectoNombre A
+					span.efectoNombre r
+					span.efectoNombre a
+					span.efectoNombre b
+					span.efectoNombre e
+					span.efectoNombre l
+					span.efectoNombre i
+					span.efectoNombre a
+		.container
+			.row.espaciado
+				block menu
+			.row.espaciado
+				block conoceme
+			.row.espaciado
+				block trabajos
+				block cuadros
+		.row.contactos.espaciado
+				block contactame

@@ -1,0 +1,73 @@
+extends layout.jade
+include mixin.jade
+block menu
+	ul.list-unstyled.list-inline
+		li
+			a(href="#") Conóceme
+		li
+			a(href="#") Mis Proyectos
+		li
+			a(href="#") Mis Intereses
+		li
+			a(href="#") Contáctame
+		li
+			a(href="#") Idiomas
+block conoceme
+	#warped
+		span.w0
+		span.w1
+		span.w2.verde S
+		span.w3.amarillo o
+		span.w4.rosa b
+		span.w5.celeste r
+		span.w6.rosa e
+		span.w7  
+		span.w8.verde2 m
+		span.w9 
+		span.w10.lila i
+	.sobreMi  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nobis nostrum illo repellat. Id cumque, ab odit aperiam, ipsa, quod placeat consectetur, recusandae saepe fugit quis aliquid! Quos, blanditiis, totam?
+block trabajos
+	#warped
+		span.w0.rosa M
+		span.w1.celeste i
+		span.w2.amarillo s
+		span.w3  
+		span.w4.lila p
+		span.w5.verde r
+		span.w6.amarillo o
+		span.w7.lila y
+		span.w8.verde2 e
+		span.w9.celeste c
+		span.w10.amarillo t
+		span.w11.rosa o
+		span.w12.celeste s
+block cuadros
+	.row
+		.col-sm-2
+		.col-sm-8
+			.row.cuadros
+				.col-sm-4
+					+imagen('../images/gentleman.png')
+				.col-sm-4
+					+imagen('../images/primes.png')
+				.col-sm-4
+					+imagen('../images/triangle.png')
+			.row.cuadros
+				.col-sm-6
+					+imagen('../images/republica.png')
+				.col-sm-6
+					+imagen('../images/descarga.jpg')
+
+		.col-sm-2
+block contactame
+	.enlinea.tam1
+		+imagen('../images/correo.png')
+	p.forma1.tblanco.enlinea Contactame
+	p.correo.tblanco arabelia.aragon.q@gmail.com
+	.contacto.enlinea
+		+imagen('../images/face.jpg')
+	.contacto.enlinea
+		+imagen('../images/github.png')
+		p lia
+
+

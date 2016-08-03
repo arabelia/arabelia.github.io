@@ -1,0 +1,24 @@
+{
+  "name": "arabelia",
+  "version": "1.0.0",
+  "description": "portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arabelia/arabelia.github.io.git"
+  },
+  "author": "arabelia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arabelia/arabelia.github.io/issues"
+  },
+  "homepage": "https://github.com/arabelia/arabelia.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
