@@ -92,22 +92,22 @@ font-size: 100px;
 font-family: 'Unna', serif;
 }
 
-#warped {position: relative; display: block; width:330px; height:100px; margin: auto;}
-#warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;-moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50% 100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
-#warped span{font-family:Georgia;font-size:45px;font-weight:regular;font-style:normal;line-height:0.75; white-space:pre; overflow:visible; padding:0px; text-shadow: 2px 2px 3px #391D0A;}
-#warped .w0 {-moz-transform: rotate(-6.2rad);-webkit-transform: rotate(-6.2rad);-o-transform:rotate(-6.2rad);-ms-transform: rotate(-6.2rad); transform: rotate(-6.2rad); width: 31px; height: 33px; left: 1.68px; top: 51.01px; }
-#warped .w1 {-moz-transform: rotate(-6.52rad);-webkit-transform: rotate(-6.52rad);-o-transform:rotate(-6.52rad);-ms-transform: rotate(-6.52rad); transform: rotate(-6.52rad);width: 9px; height: 33px; left: 41.3px; top: 47.04px;}
-#warped .w2 {-moz-transform: rotate(-6.56rad);-webkit-transform: rotate(-6.56rad);-o-transform:rotate(-6.56rad);-ms-transform: rotate(-6.56rad); transform: rotate(-6.56rad);width: 15px; height: 33px; left: 58.65px; top: 41.7px;}
-#warped .w3 {-moz-transform: rotate(-6.57rad);-webkit-transform: rotate(-6.57rad);-o-transform:rotate(-6.57rad);-ms-transform: rotate(-6.57rad); transform: rotate(-6.57rad);width: 8px; height: 33px; left: 81.7px; top: 36.09px;}
-#warped .w4 {-moz-transform: rotate(-6.56rad);-webkit-transform: rotate(-6.56rad);-o-transform:rotate(-6.56rad);-ms-transform: rotate(-6.56rad); transform: rotate(-6.56rad);width: 18px; height: 33px; left: 98.07px; top: 29.97px;}
-#warped .w5 {-moz-transform: rotate(-6.51rad);-webkit-transform: rotate(-6.51rad);-o-transform:rotate(-6.51rad);-ms-transform: rotate(-6.51rad); transform: rotate(-6.51rad);width: 16px; height: 33px; left: 124px; top: 23.57px;}
-#warped .w6 {-moz-transform: rotate(-6.27rad);-webkit-transform: rotate(-6.27rad);-o-transform:rotate(-6.27rad);-ms-transform: rotate(-6.27rad); transform: rotate(-6.27rad);width: 19px; height: 33px; left: 148.76px; top: 19.91px;}
-#warped .w7 {-moz-transform: rotate(-6.42rad);-webkit-transform: rotate(-6.42rad);-o-transform:rotate(-6.42rad);-ms-transform: rotate(-6.42rad); transform: rotate(-6.42rad);width: 18px; height: 33px; left: 173.25px; top: 25.23px;}
-#warped .w8 {-moz-transform: rotate(-6.23rad);-webkit-transform: rotate(-6.23rad);-o-transform:rotate(-6.23rad);-ms-transform: rotate(-6.23rad); transform: rotate(-6.23rad);width: 17px; height: 33px; left: 200.2px; top: 24.83px;}
-#warped .w9 {-moz-transform: rotate(-6.16rad);-webkit-transform: rotate(-6.16rad);-o-transform:rotate(-6.16rad);-ms-transform: rotate(-6.16rad); transform: rotate(-6.16rad);width: 17px; height: 33px; left: 226.45px; top: 27.36px;}
-#warped .w10 {-moz-transform: rotate(-6.13rad);-webkit-transform: rotate(-6.13rad);-o-transform:rotate(-6.13rad);-ms-transform: rotate(-6.13rad); transform: rotate(-6.13rad);width: 10px; height: 33px; left: 251.72px; top: 30.54px;}
-#warped .w11 {-moz-transform: rotate(-6.1rad);-webkit-transform: rotate(-6.1rad);-o-transform:rotate(-6.1rad);-ms-transform: rotate(-6.1rad); transform: rotate(-6.1rad);width: 19px; height: 33px; left: 270.38px; top: 34.62px;}
-#warped .w12 {-moz-transform: rotate(-6.08rad);-webkit-transform: rotate(-6.08rad);-o-transform:rotate(-6.08rad);-ms-transform: rotate(-6.08rad); transform: rotate(-6.08rad);width: 15px; height: 33px; left: 298.54px; top: 39.87px;}
+#estiloTitulo {position: relative; display: block; width:330px; height:100px; margin: auto;}
+#estiloTitulo>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;-moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50% 100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+#estiloTitulo span{font-family:Georgia;font-size:45px;font-weight:regular;font-style:normal;line-height:0.75; white-space:pre; overflow:visible; padding:0px; text-shadow: 2px 2px 3px #391D0A;}
+#estiloTitulo .w0 {-moz-transform: rotate(-6.2rad);-webkit-transform: rotate(-6.2rad);-o-transform:rotate(-6.2rad);-ms-transform: rotate(-6.2rad); transform: rotate(-6.2rad); width: 31px; height: 33px; left: 1.68px; top: 51.01px; }
+#estiloTitulo .w1 {-moz-transform: rotate(-6.52rad);-webkit-transform: rotate(-6.52rad);-o-transform:rotate(-6.52rad);-ms-transform: rotate(-6.52rad); transform: rotate(-6.52rad);width: 9px; height: 33px; left: 41.3px; top: 47.04px;}
+#estiloTitulo .w2 {-moz-transform: rotate(-6.56rad);-webkit-transform: rotate(-6.56rad);-o-transform:rotate(-6.56rad);-ms-transform: rotate(-6.56rad); transform: rotate(-6.56rad);width: 15px; height: 33px; left: 58.65px; top: 41.7px;}
+#estiloTitulo .w3 {-moz-transform: rotate(-6.57rad);-webkit-transform: rotate(-6.57rad);-o-transform:rotate(-6.57rad);-ms-transform: rotate(-6.57rad); transform: rotate(-6.57rad);width: 8px; height: 33px; left: 81.7px; top: 36.09px;}
+#estiloTitulo .w4 {-moz-transform: rotate(-6.56rad);-webkit-transform: rotate(-6.56rad);-o-transform:rotate(-6.56rad);-ms-transform: rotate(-6.56rad); transform: rotate(-6.56rad);width: 18px; height: 33px; left: 98.07px; top: 29.97px;}
+#estiloTitulo .w5 {-moz-transform: rotate(-6.51rad);-webkit-transform: rotate(-6.51rad);-o-transform:rotate(-6.51rad);-ms-transform: rotate(-6.51rad); transform: rotate(-6.51rad);width: 16px; height: 33px; left: 124px; top: 23.57px;}
+#estiloTitulo .w6 {-moz-transform: rotate(-6.27rad);-webkit-transform: rotate(-6.27rad);-o-transform:rotate(-6.27rad);-ms-transform: rotate(-6.27rad); transform: rotate(-6.27rad);width: 19px; height: 33px; left: 148.76px; top: 19.91px;}
+#estiloTitulo .w7 {-moz-transform: rotate(-6.42rad);-webkit-transform: rotate(-6.42rad);-o-transform:rotate(-6.42rad);-ms-transform: rotate(-6.42rad); transform: rotate(-6.42rad);width: 18px; height: 33px; left: 173.25px; top: 25.23px;}
+#estiloTitulo .w8 {-moz-transform: rotate(-6.23rad);-webkit-transform: rotate(-6.23rad);-o-transform:rotate(-6.23rad);-ms-transform: rotate(-6.23rad); transform: rotate(-6.23rad);width: 17px; height: 33px; left: 200.2px; top: 24.83px;}
+#estiloTitulo .w9 {-moz-transform: rotate(-6.16rad);-webkit-transform: rotate(-6.16rad);-o-transform:rotate(-6.16rad);-ms-transform: rotate(-6.16rad); transform: rotate(-6.16rad);width: 17px; height: 33px; left: 226.45px; top: 27.36px;}
+#estiloTitulo .w10 {-moz-transform: rotate(-6.13rad);-webkit-transform: rotate(-6.13rad);-o-transform:rotate(-6.13rad);-ms-transform: rotate(-6.13rad); transform: rotate(-6.13rad);width: 10px; height: 33px; left: 251.72px; top: 30.54px;}
+#estiloTitulo .w11 {-moz-transform: rotate(-6.1rad);-webkit-transform: rotate(-6.1rad);-o-transform:rotate(-6.1rad);-ms-transform: rotate(-6.1rad); transform: rotate(-6.1rad);width: 19px; height: 33px; left: 270.38px; top: 34.62px;}
+#estiloTitulo .w12 {-moz-transform: rotate(-6.08rad);-webkit-transform: rotate(-6.08rad);-o-transform:rotate(-6.08rad);-ms-transform: rotate(-6.08rad); transform: rotate(-6.08rad);width: 15px; height: 33px; left: 298.54px; top: 39.87px;}
 
 /*colores vinatge*/
 .verde{color: #BFE372;}
@@ -128,14 +128,15 @@ font-family: 'Unna', serif;
 .centrar{text-align: center;}
 .enlinea{display: inline-block;}
 .espaciado{margin: 1em 0;}
+.courier{font-family: "courier";}
 
 .cuadros img{margin: 0.3em; border: 8px solid #fff;box-shadow: 3px 3px 4px #391D0A;}
 
 
 /*efectos de contacto*/
-.forma1 {font-size: 40px; font-weight: 200; font-family: "courier"; font-weight:bold}
+.forma1 {font-size: 40px; font-weight: 200;  font-weight:bold}
 .tam1{width: 30px; }
-.correo {font-size: 30px; font-family: "courier"; text-shadow: 3px 3px 4px #391D0A; font-weight:bold;}
+.correo {font-size: 30px; text-shadow: 3px 3px 4px #391D0A; font-weight:bold;}
 .contacto {width: 80px; height: 80px; margin: 0.5em;}
 .contacto img{ border-radius: 50%;}
 .contactos{background-image: url('../images/pie.jpg')}
@@ -144,3 +145,23 @@ font-family: 'Unna', serif;
   background-size: cover;
   background-repeat: no-repeat;*/
 
+
+.slider{width: 250px; margin: auto; overflow: hidden; }
+.slider ul{padding: 0;display: flex; width: 1000px;animation: cambio 16s infinite alternate; animation-timing-function: linear;}
+.slider li{width: 90%; list-style: none;}
+
+@keyframes cambio { 
+  0% {margin-left: 0;}
+  25% {margin-left: 0;}
+
+  30% {margin-left: -100%;}
+  50% {margin-left: -100%;}
+
+  55% {margin-left: -200%;}
+  75% {margin-left: -200%;}
+
+  80% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+ }
+
+ .frase p{font-size: 20px; }
