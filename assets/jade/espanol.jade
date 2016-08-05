@@ -1,0 +1,41 @@
+extends layout.jade
+include mixin.jade
+
+block conoceme
+	+tituloSeccion('S','o','b','r','e',' ','m','i')
+	.sobreMi.courier  
+		p Hola, Mi nombre es Arabelia, naci en el hermoso Valle del Colca. Me gusta la naturaleza, los animales y las plantas.  
+		p Me apasiona realizar proyectos y verlos hechos realidad. Me gusta la tecnologia y la investigación, enfocados a contribuir con el bienestar de la socidad y sobre todo del medio ambiente.
+block trabajos
+	+tituloSeccion('M','i','s',' ','p','r','o','y','e','c','t','o','s')
+block intereses
+	+tituloSeccion('M','i','s',' ','i','n','t','e','r','e','s','e','s')
+block cuadros
+	.div
+		.row.cuadros
+			.col-sm-4
+				+imagen('../images/gentleman.png')
+			.col-sm-4
+				+imagen('../images/primes.png')
+			.col-sm-4
+				+imagen('../images/triangle.png')
+		.row.cuadros
+			.col-sm-6
+				+imagen('../images/republica.png')
+			.col-sm-6
+				+imagen('../images/descarga.jpg')
+
+		.col-sm-2
+block contactame
+	.enlinea.tam1
+		+imagen('../images/correo.png')
+	.enlinea
+		+tituloSeccion('C','o','n','t','a','c','t','a','m','e')
+	//- p.forma1.tblanco.enlinea.courier Contactame
+	p.correo.tblanco.courier arabelia.aragon.q@gmail.com
+	.contacto.enlinea
+		+imagen('../images/face.jpg')
+	.contacto.enlinea
+		+imagen('../images/github.png')
+
+

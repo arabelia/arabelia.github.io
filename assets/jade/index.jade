@@ -1,109 +1,39 @@
-extends layout.jade
 include mixin.jade
-block menu
-	ul.list-unstyled.list-inline.courier
-		li
-			a(href="#") Conóceme
-		li
-			a(href="#") Mis Proyectos
-		li
-			a(href="#") Contáctame
-		li
-			a(href="#") Idiomas
-block conoceme
-	#estiloTitulo
-		span.w0
-		span.w1
-		span.w2.verde S
-		span.w3.amarillo o
-		span.w4.rosa b
-		span.w5.celeste r
-		span.w6.rosa e
-		span.w7  
-		span.w8.verde2 m
-		span.w9 
-		span.w10.lila i
-	.sobreMi.courier  
-		p Hola, Mi nombre es Arabelia, naci en el hermoso Valle del Colca. Me gusta la naturaleza, los animales y las plantas.  
-		p Me apasiona realizar proyectos y verlos hechos realidad. Me gusta la tecnologia y la investigación, enfocados a contribuir con el bienestar de la socidad y sobre todo del medio ambiente.
-block frase1
-	.slider
-		ul.list-unstyled.frase.courier
-			li
-				p "Superarse es preciso, seguir de frente es escencial. Mirar para atras es perdida de tiempo. Si el pasado fuese bueno seria el presente" 
-				p Clarice Lispector
-			li
-				p "¿Qué es la verdad? Pregunta difícil, pero la he resuelto en lo que a mi concierne diciendo que es lo que te dice tu voz interior."
-				p Mahatma Gandhi
-			li
-				p "La verdad se robustece con la investigación y la dilación; la falsedad, con el apresuramiento y la incertidumbre."
-				p  Tácito
-			li
-				p "A un alma se le mide por la amplitud de sus deseos, del mismo modo que se juzga de antemano una catedral por la altura de sus torres."
-				p Gustave Flaubert 
-block intereses
-	#estiloTitulo
-		span.w0.rosa M
-		span.w1.celeste i
-		span.w2.amarillo s
-		span.w3  
-		span.w4.lila I
-		span.w5.verde n
-		span.w6.amarillo t
-		span.w7.lila e
-		span.w8.verde2 r
-		span.w9.celeste e
-		span.w10.amarillo s
-		span.w11.rosa e
-		span.w12.celeste s
-block frase2
-	.courier
-		p "La posibilidad de realizar un sueño es lo que hace que la vida sea interesante."
-		p Paulo Coelho
-		p "Importa mucho más lo que tú piensas de ti mismo que lo que los otros opinen de ti."
-		p Séneca
-block trabajos
-	#estiloTitulo
-		span.w0.rosa M
-		span.w1.celeste i
-		span.w2.amarillo s
-		span.w3  
-		span.w4.lila p
-		span.w5.verde r
-		span.w6.amarillo o
-		span.w7.lila y
-		span.w8.verde2 e
-		span.w9.celeste c
-		span.w10.amarillo t
-		span.w11.rosa o
-		span.w12.celeste s
-block cuadros
-	.row
-		.col-sm-2
-		.col-sm-8
-			.row.cuadros
-				.col-sm-4
-					+imagen('../images/gentleman.png')
-				.col-sm-4
-					+imagen('../images/primes.png')
-				.col-sm-4
-					+imagen('../images/triangle.png')
-			.row.cuadros
-				.col-sm-6
-					+imagen('../images/republica.png')
-				.col-sm-6
-					+imagen('../images/descarga.jpg')
-
-		.col-sm-2
-block contactame
-	.enlinea.tam1
-		+imagen('../images/correo.png')
-	p.forma1.tblanco.enlinea.courier Contactame
-	p.correo.tblanco.courier arabelia.aragon.q@gmail.com
-	.contacto.enlinea
-		+imagen('../images/face.jpg')
-	.contacto.enlinea
-		+imagen('../images/github.png')
-		p lia
-
-
+doctype html
+html(lang='es-PE')
+	include head.jade
+	body.centrar
+		.row
+			#blur
+			.bubbleLarge
+			.bubbleLarge
+			.bubbleLarge
+			.bubbleLarge
+			.bubbleLarge
+			.bubbleMedium
+			.bubbleMedium
+			.bubbleMedium
+			.bubbleMedium
+			.bubbleMedium
+			.bubbleSmall
+			.bubbleSmall
+			.bubbleSmall
+			.bubbleSmall
+			.bubbleSmall
+			.bubbleSmall
+			.bubbleSmall
+			.bubbleSmall
+			.bubbleSmall
+			#hide(onclick="document.getElementById('blur').style.display = 'none';")
+			#show(onclick="document.getElementById('blur').style.display = 'inline';")
+			+nombre('A','r','a','b','e','l','i','a')
+			.menu
+				ul.list-unstyled.list-inline.courier
+					li
+						a(href="espanol.html") Español
+					li
+						a(href="#") English
+					li
+						a(href="#") Portugues
+			.separadorPortada
+				img(src='../images/separadorPortada.png')

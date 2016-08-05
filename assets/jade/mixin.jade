@@ -1,3 +1,17 @@
 //-mixin para todas las paginas solo enviando la url
 mixin imagen(url)
 	img.img-responsive(src= url)
+
+//- titulo de cada seccion
+mixin tituloSeccion(...items)
+	.nombre
+		each item in items
+			span.efectoSeccion= item
+	.separadorSeccion.invertirColor
+		img(src='../images/separadorSeccion.png')
+
+//- nombre
+mixin nombre(...items)
+	.nombre
+		each item in items
+			span.efectoNombre= item
