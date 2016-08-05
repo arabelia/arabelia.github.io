@@ -8,7 +8,7 @@
 color: #f2f2f2;
 text-shadow: 1px 1px 10px #3D220F;
 font-size: 100px;
-font-family: 'Unna', serif;
+font-family: 'Unna',"Times New Roman", serif;
 }
 .menu li{
   margin-top: 2em;
@@ -34,17 +34,18 @@ font-family: 'Unna', serif;
 
 .contenedor{
   width: 100%; 
-  background-image: url('../images/cuerpo2.jpg');
+  background-image: url('../images/cuerpo3.jpg');
+
 }
 
 /*titulo de las secciones*/
 
 .efectoSeccion {
-color: #f2f2f2;
+color: #FFFFFF;
 /*color: #212020;*/
 text-shadow: 1px 1px 10px #3D220F;
 font-size: 50px;
-font-family: 'Unna', serif;
+font-family: 'Unna', "Times New Roman", serif;
 }
 
 .sobreMi{
@@ -71,18 +72,20 @@ font-family: 'Unna', serif;
 .plomo{color: #E0D6D6;}
 .rosa{color: #E16585;}
 .verde2{color: #C1DA5F;}
-
-
-
-
 .morado{background-color: #783177;}
 .tblanco{color: #fff;}
+
+/*intereses*/
+.interes1,.interes3 p{font-size: 35px; font-family: 'Dancing Script', cursive;}
+.interes4 p{font-size: 35px; font-family: 'Roboto Slab', serif;}
+.interes5 p{font-size: 45px; font-family: 'Poiret One', cursive;}
+.interes6 p{font-size: 35px; font-family: 'Indie Flower', cursive;}
 
 /*utilitarios*/
 .centrar{text-align: center;}
 .enlinea{display: inline-block;}
-.espaciado{margin: 1em 0;}
-.courier{font-family: "courier";}
+.espaciado{margin: 3em;}
+.courier{font-family: "courier","Monaco",serif;}
 .cuadros img{margin: 0.3em; border: 8px solid #fff; box-shadow: 5px 5px 18px 1px #391D0A;}
 
 
@@ -92,7 +95,7 @@ font-family: 'Unna', serif;
 .correo {font-size: 25px; text-shadow: 3px 3px 4px #391D0A; font-weight:bold;}
 .contacto {width: 60px; height: 60px; margin: 0.5em;}
 .contacto img{ border-radius: 50%;}
-.contactos{background-image: url('../images/pie.jpg')}
+/*.contactos{background-image: url('../images/pie.jpg')}*/
 
 
 /*efecto burbujas de portada*/

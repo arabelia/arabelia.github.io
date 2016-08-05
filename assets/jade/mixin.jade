@@ -7,6 +7,8 @@ mixin tituloSeccion(...items)
 	.nombre
 		each item in items
 			span.efectoSeccion= item
+
+mixin separador()
 	.separadorSeccion.invertirColor
 		img(src='../images/separadorSeccion.png')
 
@@ -15,3 +17,10 @@ mixin nombre(...items)
 	.nombre
 		each item in items
 			span.efectoNombre= item
+
+//- intereses
+mixin interes2(a,b)
+	p.interes1= a
+	p.interes1=b
+mixin interes1(a)
+	p.interes4= a

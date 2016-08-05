@@ -6,16 +6,51 @@ html(lang='es-PE')
 		.contenedor
 			//-header
 			.container
-				.row
+				.row.espaciado
 					.col-sm-4
 						.foto1.rotar
 							img(src='../images/foto2.jpg')
 					.col-sm-8
 						block conoceme
 				.row.espaciado
+					block tituloIntereses
+					+separador()
 					block intereses
+						.row
+							.col-xs-4
+								.interes1
+									block interes1
+							.col-xs-4
+								.interes2
+									block interes2
+							.col-xs-4
+								.interes3
+									block interes3
+						.row
+							.interes4
+								block interes4
+							.interes5
+								block interes5
+						.row
+							.col-sm-6
+								.interes6
+									block interes6
+							.col-sm-7
+								.interes6
+									block interes7
+					+separador()
 				.row.espaciado
 					block trabajos
 					block cuadros
 				.row.contactos.espaciado
-					block contactame
+					block contact0
+						.enlinea.tam1
+							+imagen('../images/correo.png')
+						.enlinea
+							block contactame
+						+separador()
+						p.correo.tblanco.courier arabelia.aragon.q@gmail.com
+						.contacto.enlinea
+							+imagen('../images/face.jpg')
+						.contacto.enlinea
+							+imagen('../images/github.png')
