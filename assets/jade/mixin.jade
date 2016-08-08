@@ -18,6 +18,11 @@ mixin nombre(...items)
 		each item in items
 			span.efectoNombre= item
 
+//- sobre mi
+mixin sobreMi(a,b)
+	.sobreMi.courier= a
+	.sobreMi.courier= b
+
 //- intereses
 mixin interes2(a,b)
 	p.interes1= a
@@ -28,6 +33,6 @@ mixin interes1(a)
 //- generador de cuadros de proyectos y su descripcio
 mixin cuadros(href,src,texto)
 	.cuadros
-		a(href= href, target=_blank)
+		a(href= href, target="_blank")
 			img(src= src)
 			.descripcion= texto

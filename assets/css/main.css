@@ -49,20 +49,28 @@ font-family: 'Unna', "Times New Roman", serif;
 }
 
 .sobreMi{
-  width: 70%;
-  margin:auto;
+  width: 70%; margin:auto;   font-size: 20px; padding: 0.5em 0;
 }
-.sobreMi p{
-    font-size: 20px;
-}
+
 /*foto*/
-.foto1 img{  width: 250px;margin-top: 5em;  border: 7px solid #fff; box-shadow: 3px 3px 4px #391D0A;}
+.foto img{  width: 250px;  border: 7px solid #fff; box-shadow: 3px 3px 4px #391D0A;}
 .rotar{
   -webkit-transform: rotateZ(-10deg);
   -moz-transform: rotateZ(-20deg);
   -o-transform: rotateZ(-20deg);
 }
-
+.foto0 img{  width: 200px; }
+.rotar0{
+  -webkit-transform: rotateZ(170deg);
+  -moz-transform: rotateZ(-20deg);
+  -o-transform: rotateZ(-20deg);
+}
+.foto1 img{  width: 200px;}
+.rotar1{
+  -webkit-transform: rotateZ(-20deg);
+  -moz-transform: rotateZ(-20deg);
+  -o-transform: rotateZ(-20deg);
+}
 
 /*colores vinatge*/
 .verde{color: #BFE372;}
@@ -105,6 +113,10 @@ font-family: 'Unna', "Times New Roman", serif;
 /*efectos para el reloj*/
 #reloj{
     font-size: 25px; margin-top: 2em; padding: 0.5em 0; background-color: #111; color: #fff;
+}
+
+#fecha{
+    font-size: 20px; font-family: 'Indie Flower', cursive; padding-bottom: 1em;
 }
 
 /*efecto burbujas de portada*/

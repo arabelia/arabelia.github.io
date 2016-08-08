@@ -1,12 +1,11 @@
 extends layout.jade
 include mixin.jade
-
+block bodyInicio
+	body.centrar(onload="fechaEspanol()")
 block conoceme
 	+tituloSeccion('S','o','b','r','e',' ','m','i')
 	+separador()
-	.sobreMi.courier  
-		p Hola, Mi nombre es Arabelia, naci en el hermoso Valle del Colca. Me gusta la naturaleza, los animales y las plantas.  
-		p Me apasiona realizar proyectos y verlos hechos realidad. Me gusta la tecnologia y la investigación, enfocados a contribuir con el bienestar de la socidad y sobre todo del medio ambiente.
+	+sobreMi("Hola, Mi nombre es Arabelia, naci en el hermoso Valle del Colca. Me gusta la naturaleza, los animales y las plantas.","Me apasiona realizar proyectos y verlos hechos realidad. Me gusta la tecnologia y la investigación, enfocados a contribuir con el bienestar de la socidad y sobre todo del medio ambiente.")
 block trabajos
 	+tituloSeccion('M','i','s',' ','p','r','o','y','e','c','t','o','s')
 	+separador()
