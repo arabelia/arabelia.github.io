@@ -21,6 +21,13 @@ mixin nombre(...items)
 //- intereses
 mixin interes2(a,b)
 	p.interes1= a
-	p.interes1=b
+	p.interes1= b
 mixin interes1(a)
 	p.interes4= a
+
+//- generador de cuadros de proyectos y su descripcio
+mixin cuadros(href,src,texto)
+	.cuadros
+		a(href= href, target=_blank)
+			img(src= src)
+			.descripcion= texto

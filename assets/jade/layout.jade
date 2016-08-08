@@ -2,7 +2,7 @@ include mixin.jade
 doctype html
 html(lang='es-PE')
 	include head.jade
-	body.centrar
+	body.centrar(onload="mueveReloj()")
 		.contenedor
 			//-header
 			.container
@@ -23,6 +23,10 @@ html(lang='es-PE')
 							.col-xs-4
 								.interes2
 									block interes2
+									//- reloj
+									//- form(name="form_reloj") 
+									//- 	input(type="text" name="reloj" size="10")
+									#reloj
 							.col-xs-4
 								.interes3
 									block interes3
@@ -32,12 +36,8 @@ html(lang='es-PE')
 							.interes5
 								block interes5
 						.row
-							.col-sm-6
-								.interes6
-									block interes6
-							.col-sm-7
-								.interes6
-									block interes7
+							.interes6
+								block interes6
 					+separador()
 				.row.espaciado
 					block trabajos
@@ -54,3 +54,6 @@ html(lang='es-PE')
 							+imagen('../images/face.jpg')
 						.contacto.enlinea
 							+imagen('../images/github.png')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
+		script(type="text/javascript" src="../js/main.js")

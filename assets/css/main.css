@@ -86,7 +86,12 @@ font-family: 'Unna', "Times New Roman", serif;
 .enlinea{display: inline-block;}
 .espaciado{margin: 3em;}
 .courier{font-family: "courier","Monaco",serif;}
-.cuadros img{margin: 0.3em; border: 8px solid #fff; box-shadow: 5px 5px 18px 1px #391D0A;}
+
+/*efecto de cuadros de portafolios*/
+.cuadros{box-shadow: 5px 5px 18px 1px #391D0A; background-color: #fff;margin: 1em;}
+.cuadros img{margin: 0.3em; border: 8px solid #fff; margin: 0.5em; width: 90%}
+.cuadros a{text-decoration: none; }
+.descripcion{color:#111; font-family: 'Roboto Slab', serif; font-size: 15px; }
 
 
 /*efectos de contacto*/
@@ -97,6 +102,10 @@ font-family: 'Unna', "Times New Roman", serif;
 .contacto img{ border-radius: 50%;}
 /*.contactos{background-image: url('../images/pie.jpg')}*/
 
+/*efectos para el reloj*/
+#reloj{
+    font-size: 25px; margin-top: 2em; padding: 0.5em 0; background-color: #111; color: #fff;
+}
 
 /*efecto burbujas de portada*/
 html { 
