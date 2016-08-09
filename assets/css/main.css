@@ -2,8 +2,11 @@
 .nombre{
   margin-top: 2em;
   height: 100px;
-
 }
+.fraseInicial{
+   text-shadow: 1px 1px 10px #3D220F;margin: 2em auto;
+}
+.fraseInicial p{font-size: 45px; font-family: 'Poiret One', cursive; color: #fff; border-top:3px solid #fff; margin:auto;}
 .efectoNombre {
 color: #f2f2f2;
 text-shadow: 1px 1px 10px #3D220F;
@@ -13,14 +16,13 @@ font-family: 'Unna',"Times New Roman", serif;
 .menu li{
   margin-top: 2em;
   padding: 1em;
-  border-top: 2px solid #fff;
 }
 .menu a{
-  padding: 2em;
-  font-size: 20px; 
+  padding: 1em;
+  font-size: 15px; 
   text-decoration: none;
   font-weight: bold;
-  color:#fff;
+  color:#111;
 }
 .separadorPortada img{
   margin: auto; width: 40%;
@@ -33,7 +35,8 @@ font-family: 'Unna',"Times New Roman", serif;
 }
 
 .contenedor{
-  width: 100%; 
+  margin: 0px;
+  padding:0px;
   background-image: url('../images/cuerpo3.jpg');
 
 }
@@ -41,9 +44,9 @@ font-family: 'Unna',"Times New Roman", serif;
 /*titulo de las secciones*/
 
 .efectoSeccion {
-color: #FFFFFF;
+color: #2D1818;
 /*color: #212020;*/
-text-shadow: 1px 1px 10px #3D220F;
+text-shadow: 2px 2px 10px #A19999;
 font-size: 50px;
 font-family: 'Unna', "Times New Roman", serif;
 }
@@ -85,9 +88,9 @@ font-family: 'Unna', "Times New Roman", serif;
 
 /*intereses*/
 .interes1,.interes3 p{font-size: 35px; font-family: 'Dancing Script', cursive;}
-.interes4 p{font-size: 35px; font-family: 'Roboto Slab', serif;}
+.interes4 p{font-size: 35px; font-family: "courier","Monaco",serif; font-weight: bold;}
 .interes5 p{font-size: 45px; font-family: 'Poiret One', cursive;}
-.interes6 p{font-size: 35px; font-family: 'Indie Flower', cursive;}
+.interes6 p{font-size: 35px; font-family: 'Dancing Script', cursive;}
 
 /*utilitarios*/
 .centrar{text-align: center;}
@@ -105,7 +108,7 @@ font-family: 'Unna', "Times New Roman", serif;
 /*efectos de contacto*/
 .forma1 {font-size: 40px; font-weight: 200;  font-weight:bold}
 .tam1{width: 30px; }
-.correo {font-size: 25px; text-shadow: 3px 3px 4px #391D0A; font-weight:bold;}
+.correo {font-size: 25px;  font-weight:bold;}
 .contacto {width: 60px; height: 60px; margin: 0.5em;}
 .contacto img{ border-radius: 50%;}
 /*.contactos{background-image: url('../images/pie.jpg')}*/
@@ -120,7 +123,7 @@ font-family: 'Unna', "Times New Roman", serif;
 }
 
 /*efecto burbujas de portada*/
-html { 
+#portada { 
   background-image: url('../images/portada2.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -128,6 +131,7 @@ html {
     background-size: cover;
     margin: 0px;
     padding: 0px;
+    height: 700px;
 }
 
 body{

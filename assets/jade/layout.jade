@@ -3,64 +3,107 @@ doctype html
 html(lang='es-PE')
 	include head.jade
 	block bodyInicio
+	//- body.centrar
+	block pagina
+		#portada
+			.row
+				#blur
+					.bubbleLarge
+					.bubbleLarge
+					.bubbleLarge
+					.bubbleLarge
+					.bubbleLarge
+					.bubbleMedium
+					.bubbleMedium
+					.bubbleMedium
+					.bubbleMedium
+					.bubbleMedium
+					.bubbleSmall
+					.bubbleSmall
+					.bubbleSmall
+					.bubbleSmall
+					.bubbleSmall
+					.bubbleSmall
+					.bubbleSmall
+					.bubbleSmall
+					.bubbleSmall
+				#hide(onclick="document.getElementById('blur').style.display = 'none';")
+				#show(onclick="document.getElementById('blur').style.display = 'inline';")
+				+nombre('A','r','a','b','e','l','i','a')
+				block fraseInicial
+				.separadorPortada
+					img(src='assets/images/separadorPortada.png')
 	block cuerpo
 		.contenedor
 			//-header
 			.container
-				.row.espaciado
-					.col-sm-5
-						.rotar0.foto0.enlinea
-							img(src='../images/s3.png')
-						.rotar1.foto1.enlinea
-							img(src='../images/s3.png')
-						.foto.rotar
-							img(src='../images/images.jpg')
-					.col-sm-7
-						block conoceme
+				.menu
+					ul.list-unstyled.list-inline.courier
+						li
+							a(href="espanol.html") Español
+						li
+							a(href="#") English
+						li
+							a(href="#") Portugues
+				#sobreMi
+					.row.espaciado
+						.col-sm-5
+							.rotar0.foto0.enlinea
+								img(src='assets/images/s3.png')
+							.rotar1.foto1.enlinea
+								img(src='assets/images/s3.png')
+							.foto.rotar
+								img(src='assets/images/images.jpg')
+						.col-sm-7
+							block conoceme
+							+separador()
+				#intereses
+					.row.espaciado
+						block tituloIntereses
 						+separador()
-				.row.espaciado
-					block tituloIntereses
-					+separador()
-					block intereses
-						.row
-							.col-xs-4
-								.interes1.wow.slideInLeft(data-wow-duration="500ms", data-wow-delay="300ms")
-									block interes1
-							.col-xs-4
-								.interes2
-									block interes2
-									//- reloj
-									//- form(name="form_reloj") 
-									//- 	input(type="text" name="reloj" size="10")
-									#reloj
-									#fecha
-							.col-xs-4
-								.interes3.wow.slideInRight(data-wow-duration="500ms", data-wow-delay="300ms")
-									block interes3
-						.row
-							.interes4.wow.slideInLeft(data-wow-duration="600ms", data-wow-delay="300ms")
-								block interes4
-							.interes5.wow.slideInRight(data-wow-duration="600ms", data-wow-delay="300ms")
-								block interes5
-						.row
-							.interes6.wow.fadeInUp(data-wow-duration="600ms" data-wow-delay="400ms")
-								block interes6
-					+separador()
-				.row.espaciado
-					block trabajos
-					block cuadros
-				.row.contactos.espaciado
-					block contact0
-						.enlinea.tam1
-							+imagen('../images/correo.png')
-						.enlinea
-							block contactame
+						block intereses
+							.row
+								.col-xs-4
+									.interes1.wow.slideInLeft(data-wow-duration="500ms", data-wow-delay="300ms")
+										block interes1
+								.col-xs-4
+									.interes2
+										block interes2
+										//- reloj
+										//- form(name="form_reloj") 
+										//- 	input(type="text" name="reloj" size="10")
+										#reloj
+										#fecha
+								.col-xs-4
+									.interes3.wow.slideInRight(data-wow-duration="500ms", data-wow-delay="300ms")
+										block interes3
+							.row
+								.interes4.wow.slideInLeft(data-wow-duration="600ms", data-wow-delay="300ms")
+									block interes4
+								.interes5.wow.slideInRight(data-wow-duration="600ms", data-wow-delay="300ms")
+									block interes5
+							.row
+								.interes6.wow.fadeInUp(data-wow-duration="600ms" data-wow-delay="400ms")
+									block interes6
 						+separador()
-						p.correo.tblanco.courier arabelia.aragon.q@gmail.com
-						.contacto.enlinea
-							+imagen('../images/face.jpg')
-						.contacto.enlinea
-							+imagen('../images/github.png')
+				#misproyectos
+					.row.espaciado
+						block trabajos
+						block cuadros
+					+separador()
+				#contacto
+					.row.contactos.espaciado
+						block contact0
+							//- .enlinea.tam1
+							//- 	+imagen('../images/correo.png')
+							.enlinea
+								block contactame
+							+separador()
+							p.correo.courier arabelia.aragon.q@gmail.com
+							.contacto.enlinea
+								+imagen('assets/images/face.jpg')
+							.contacto.enlinea
+								+imagen('assets/images/github.png')
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous")
-		script(type="text/javascript" src="../js/main.js")
+		script(type="text/javascript" src="assets/js/main.js")

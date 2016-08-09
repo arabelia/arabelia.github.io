@@ -1,39 +1,46 @@
+extends layout.jade
 include mixin.jade
-doctype html
-html(lang='es-PE')
-	include head.jade
-	body.centrar
+block bodyInicio
+	body.centrar(onload="fechaEspanol()")
+block fraseInicial
+	+fraseInicial("DESARROLLADORA WEB")
+block conoceme
+	+tituloSeccion('S','o','b','r','e',' ','m','i')
+	+separador()
+	+sobreMi("Hola, Mi nombre es Arabelia, naci en el hermoso Valle del Colca. Me gusta la naturaleza, los animales y las plantas.","Me apasiona realizar proyectos y verlos hechos realidad. Me gusta la tecnologia y la investigación, enfocados a contribuir con el bienestar de la socidad y sobre todo del medio ambiente.")
+block trabajos
+	+tituloSeccion('M','i','s',' ','p','r','o','y','e','c','t','o','s')
+	+separador()
+block tituloIntereses
+	+tituloSeccion('M','i','s',' ','i','n','t','e','r','e','s','e','s')
+block interes1
+	+interes2("Mi author favorito","Paulo Cohelo")
+//- block interes2
+//- 	+interes2("Mi author favorito","Paulo Cohelo")
+block interes3
+	+interes2("Conocer la historia y cultura VIVA")
+block interes4
+	+interes1("Conocer")
+block interes5
+	+interes1("LA NATURALEZA Y LA VIDA")
+block interes6
+	+interes1("Superarse es preciso, seguir de frente es escencial, mirar para atras es pérdida de tiempo, si el pasado fuese bueno seria el presente.")
+block cuadros
+	.div
 		.row
-			#blur
-			.bubbleLarge
-			.bubbleLarge
-			.bubbleLarge
-			.bubbleLarge
-			.bubbleLarge
-			.bubbleMedium
-			.bubbleMedium
-			.bubbleMedium
-			.bubbleMedium
-			.bubbleMedium
-			.bubbleSmall
-			.bubbleSmall
-			.bubbleSmall
-			.bubbleSmall
-			.bubbleSmall
-			.bubbleSmall
-			.bubbleSmall
-			.bubbleSmall
-			.bubbleSmall
-			#hide(onclick="document.getElementById('blur').style.display = 'none';")
-			#show(onclick="document.getElementById('blur').style.display = 'inline';")
-			+nombre('A','r','a','b','e','l','i','a')
-			.menu
-				ul.list-unstyled.list-inline.courier
-					li
-						a(href="espanol.html") Español
-					li
-						a(href="#") English
-					li
-						a(href="#") Portugues
-			.separadorPortada
-				img(src='../images/separadorPortada.png')
+			.col-sm-4
+				+cuadros("https://github.com/arabelia/gentleman",'assets/images/gentleman.png')
+			.col-sm-4
+				+cuadros("https://github.com/arabelia/primes",'assets/images/primes.png')
+			.col-sm-4
+				+cuadros("https://github.com/VivianaRA/Triangle-Theme",'assets/images/triangle.png')
+		.row
+			.col-sm-1
+			.col-sm-5
+				+cuadros("https://github.com/elizabethqsaico/Lab-LaRepublica",'assets/images/republica.png')
+			.col-sm-5
+				+cuadros("https://github.com/arabelia/escuela-danza",'assets/images/danza.png')
+
+		.col-sm-2
+block contactame
+	+tituloSeccion('C','o','n','t','a','c','t','a','m','e')

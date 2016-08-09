@@ -11,7 +11,7 @@ gulp.task('sass', function(){
 gulp.task('jade', function(){
  	return gulp.src('./assets/jade/*.jade') /*con q archivo va a trabajar*/
  	.pipe(gulpJade())
-	.pipe(gulp.dest('./assets/public'));/*ubicacion de destino*/
+	.pipe(gulp.dest('.'));/*ubicacion de destino*/
 }); 
 
 gulp.task('watch-sass',function(){

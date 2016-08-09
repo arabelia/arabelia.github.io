@@ -10,13 +10,18 @@ mixin tituloSeccion(...items)
 
 mixin separador()
 	.separadorSeccion.invertirColor
-		img(src='../images/separadorSeccion.png')
+		img(src='assets/images/separadorSeccion.png')
 
 //- nombre
 mixin nombre(...items)
 	.nombre
 		each item in items
 			span.efectoNombre= item
+
+//- frase
+mixin fraseInicial(a)
+	.fraseInicial.enlinea
+		p= a
 
 //- sobre mi
 mixin sobreMi(a,b)
