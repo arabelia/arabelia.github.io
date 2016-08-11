@@ -8,9 +8,13 @@ mixin tituloSeccion(...items)
 		each item in items
 			span.efectoSeccion= item
 
-mixin separador()
-	.separadorSeccion.invertirColor
-		img(src='assets/images/separadorSeccion.png')
+mixin separadorSup()
+	.separadorSeccion
+		img(src='assets/images/separadorSup.png')
+
+mixin separadorInf()
+	.separadorSeccion
+		img(src='assets/images/separadorInf.png')
 
 //- nombre
 mixin nombre(...items)
@@ -41,3 +45,23 @@ mixin cuadros(href,src,texto)
 		a(href= href, target="_blank")
 			img(src= src)
 			.descripcion= texto
+mixin menu(a,ah,b,bh,c,ch,d,dh,l1,lh1,l2,lh2,l3,lh3)
+	.menu
+		ul.list-unstyled.list-inline.courier
+			li
+				a(href= ah)= a
+			li
+				a(href= bh)= b
+			li
+				a(href= ch)= c
+			li
+				a(href= dh)= d
+			li
+				a(href= lh1)
+					img(src= l1)
+			li
+				a(href= lh2)
+					img(src= l2)
+			li
+				a(href= lh3)
+					img(src= l3)

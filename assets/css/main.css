@@ -14,16 +14,17 @@ font-size: 100px;
 font-family: 'Unna',"Times New Roman", serif;
 }
 .menu li{
-  margin-top: 2em;
-  padding: 1em;
+  margin-top: 1em;
+  /*padding: 1em;*/
 }
 .menu a{
   padding: 1em;
-  font-size: 15px; 
+  font-size: 16px; 
   text-decoration: none;
   font-weight: bold;
-  color:#111;
+  color:#fff;
 }
+.menu img{width: 30px;}
 .separadorPortada img{
   margin: auto; width: 40%;
   -webkit-filter: invert(100%);
@@ -31,7 +32,8 @@ font-family: 'Unna',"Times New Roman", serif;
 }
 
 .separadorSeccion img{
-  margin: auto; width: 280px;
+  margin: auto; width: 50%;
+  margin: 0.5em 0;
 }
 
 .contenedor{
@@ -52,7 +54,7 @@ font-family: 'Unna', "Times New Roman", serif;
 }
 
 .sobreMi{
-  width: 70%; margin:auto;   font-size: 20px; padding: 0.5em 0;
+  width: 70%; margin:auto;   font-size: 20px; padding: 0.5em 0; font-weight: bold;
 }
 
 /*foto*/
@@ -75,19 +77,8 @@ font-family: 'Unna', "Times New Roman", serif;
   -o-transform: rotateZ(-20deg);
 }
 
-/*colores vinatge*/
-.verde{color: #BFE372;}
-.lila{color: #DEA8F5;}
-.amarillo{color: #F6F783;}
-.celeste{color: #AEF2EC;}
-.plomo{color: #E0D6D6;}
-.rosa{color: #E16585;}
-.verde2{color: #C1DA5F;}
-.morado{background-color: #783177;}
-.tblanco{color: #fff;}
-
 /*intereses*/
-.interes1,.interes3 p{font-size: 35px; font-family: 'Dancing Script', cursive;}
+.interes1,.interes3 p{font-size: 35px; font-family: 'Dancing Script', cursive; vertical-align: middle; margin: 1.5em 0 0.5em}
 .interes4 p{font-size: 35px; font-family: "courier","Monaco",serif; font-weight: bold;}
 .interes5 p{font-size: 45px; font-family: 'Poiret One', cursive;}
 .interes6 p{font-size: 35px; font-family: 'Dancing Script', cursive;}
@@ -95,14 +86,30 @@ font-family: 'Unna', "Times New Roman", serif;
 /*utilitarios*/
 .centrar{text-align: center;}
 .enlinea{display: inline-block;}
-.espaciado{margin: 3em;}
+.espaciado{margin: 2em 0;}
 .courier{font-family: "courier","Monaco",serif;}
 
 /*efecto de cuadros de portafolios*/
-.cuadros{box-shadow: 5px 5px 18px 1px #391D0A; background-color: #fff;margin: 1em;}
-.cuadros img{margin: 0.3em; border: 8px solid #fff; margin: 0.5em; width: 90%}
+.cuadros{box-shadow: 5px 5px 18px 1px #B5ACAC; background-color: #fff;margin: 1em;}
+.cuadros img{margin: 0.3em;  margin:1em 0.5em; width: 90%;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
 .cuadros a{text-decoration: none; }
-.descripcion{color:#111; font-family: 'Roboto Slab', serif; font-size: 15px; }
+.descripcion{color:#111; font-family: 'Dancing Script', cursive; serif; font-size: 18px; padding:0.5em 0;  }
+.cuadros img:hover{
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+}
+.cuadros:hover{
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01)
+}
 
 
 /*efectos de contacto*/
@@ -193,22 +200,22 @@ body{
     -moz-border-radius: 50px;
     border-radius: 50px;
     animation-name: bubbleSmall;
-    animation-duration: 1.25s;
+    animation-duration: 2s;
     animation-direction: linear;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: bubbleSmall;
-    -webkit-animation-duration: 1.25s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-direction: linear;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: bubbleSmall;
-    -moz-animation-duration: 1.25s;
+    -moz-animation-duration: 2s;
     -moz-animation-direction: linear;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -o-animation-name: bubbleSmall;
-    -o-animation-duration: 1.25s;
+    -o-animation-duration: 2s;
     -o-animation-direction: linear;
     -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
@@ -248,22 +255,22 @@ body{
     -moz-border-radius: 100px;
     border-radius: 100px;
     animation-name: bubbleMedium;
-    animation-duration: 1.75s;
+    animation-duration: 2.3s;
     animation-direction: linear;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: bubbleMedium;
-    -webkit-animation-duration: 1.75s;
+    -webkit-animation-duration: 2.3s;
     -webkit-animation-direction: linear;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: bubbleMedium;
-    -moz-animation-duration: 1.75s;
+    -moz-animation-duration: 2.3s;
     -moz-animation-direction: linear;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -o-animation-name: bubbleMedium;
-    -o-animation-duration: 1.75s;
+    -o-animation-duration: 2.3s;
     -o-animation-direction: linear;
     -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
@@ -302,22 +309,22 @@ body{
     -moz-border-radius: 200px;
     border-radius: 200px;
     animation-name: bubbleLarge;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-direction: linear;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: bubbleLarge;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 4s;
     -webkit-animation-direction: linear;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: bubbleLarge;
-    -moz-animation-duration: 2s;
+    -moz-animation-duration: 4s;
     -moz-animation-direction: linear;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -o-animation-name: bubbleLarge;
-    -o-animation-duration: 2s;
+    -o-animation-duration: 4s;
     -o-animation-direction: linear;
     -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
@@ -504,3 +511,37 @@ body{
     -o-animation-delay: .3s;
 }
 
+
+/*efecto prueba reloj*/
+.reloj{width: 200; height: 200px;}
+.hand {
+  position: absolute;
+  transform-origin: center bottom;
+  left: 50%;
+  top: 70px;
+}
+.base{width: 200px;}
+.base img{width: 200px;
+  position: absolute;
+  transform-origin: center bottom;
+  left:50%;
+  margin-left: -100px;
+}
+
+.seconds img{
+  margin-top: -40px;
+  width: 8px;
+  height: 70px;
+  /*top:-4px;*/
+}
+
+.mins img{
+  margin-top: -30px;
+  width: 10px;
+  height: 55px;
+}
+
+.hours img {
+  width: 12px;
+  height: 30px;
+}
