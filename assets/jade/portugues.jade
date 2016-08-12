@@ -1,0 +1,46 @@
+extends layout.jade
+include mixin.jade
+block bodyInicio
+	body.centrar
+block menu
+	+menu("Sobre mim","#sobreMi","Meus interesses","#intereses","Meus projetos","#misProyectos","Contactame","#contacto","assets/images/espana.jpg","index.html","assets/images/eeuu.jpg","english.html","assets/images/brasil.jpg","portugues.html")
+block fraseInicial
+	+fraseInicial("PROGRAMADOR WEB")
+block conoceme
+	+tituloSeccion('S','o','b','r','e',' ','m','i','m')
+	+separadorSup()
+	+sobreMi("Olá, Meu nome é Arabelia, eu nasci na bela Colca Valley. Gosto de natureza, animais e plantas.","Sou apaixonada por projetos e torná-los realidade. Eu amo tecnologia e pesquisa, visando contribuir para o bem-estar da sociedade e, especialmente, o meio ambiente.")
+block tituloIntereses
+	+tituloSeccion('M','e','u','s',' ','i','n','t','e','r','e','s','s','e','s')
+block trabajos
+	+tituloSeccion('M','e','u','s',' ','p','r','o','j','e','t','o','s')
+	+separadorSup()
+block interes1
+	+interes1("Meu autor favorito: Paulo Coelho")
+//- block interes2
+//- 	+interes2("Mi author favorito","Paulo Cohelo")
+block interes3
+	+interes1("Conhecer a história ea cultura VIVA")
+block interes4
+	+interes1("Proteger")
+block interes5
+	+interes1("NATUREZA E VIDA")
+block interes6
+	+interes1("Superar é preciso, seguir em frente é essencial. Olhar pra trás é perda de tempo. Passade se fosse bom era presente.")
+block cuadros
+	.div
+		.row
+			.col-sm-4
+				+cuadros("https://github.com/arabelia/gentleman",'assets/images/gentleman.PNG',"Layout do projeto e design.")
+			.col-sm-4
+				+cuadros("https://github.com/arabelia/primes",'assets/images/primes.PNG',"Layout do projeto e design.")
+			.col-sm-4
+				+cuadros("https://github.com/VivianaRA/Triangle-Theme",'assets/images/triangle.PNG',"Aplicando libs e efeitos.")
+		.row
+			.col-sm-1
+			.col-sm-5
+				+cuadros("https://github.com/elizabethqsaico/Lab-LaRepublica",'assets/images/republica.PNG',"Equipe desenvolveram.")
+			.col-sm-5
+				+cuadros("https://github.com/arabelia/escuela-danza",'assets/images/danza.PNG',"Equipe desenvolveram.")
+block contactame
+	+tituloSeccion('C','o','n','t','a','c','t','a','m','e')

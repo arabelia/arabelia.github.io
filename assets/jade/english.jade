@@ -1,0 +1,46 @@
+extends layout.jade
+include mixin.jade
+block bodyInicio
+	body.centrar
+block menu
+	+menu("Abaout me","#sobreMi","My interests","#intereses","My projects","#misProyectos","Contact me","#contacto","assets/images/espana.jpg","index.html","assets/images/eeuu.jpg","english.html","assets/images/brasil.jpg","portugues.html")
+block fraseInicial
+	+fraseInicial("WEB DEVELOPER")
+block conoceme
+	+tituloSeccion('A','b','o','u','t',' ','m','e')
+	+separadorSup()
+	+sobreMi("Hello, My name is Arabelia, I was born in the beautiful Colca Valley. I like nature, animals and plants.","I am passionate about projects and make them come true. I love technology and research, aimed at contributing to the welfare of society and especially the environment.")
+block tituloIntereses
+	+tituloSeccion('M','y',' ',' I','n','t','e','r','e','s','t','s')
+block trabajos
+	+tituloSeccion('M','y',' ','P','r','o','j','e','c','t','s')
+	+separadorSup()
+block interes1
+	+interes1("My favorite author: Paulo Coelho")
+//- block interes2
+//- 	+interes2("Mi author favorito","Paulo Cohelo")
+block interes3
+	+interes1("Knowing the history and culture VIVA")
+block interes4
+	+interes1("To protect")
+block interes5
+	+interes1("NATURE AND LIFE")
+block interes6
+	+interes1("Outdo necessary, continue straight is essential, looking back is waste of time, if the past was good would be present.")
+block cuadros
+	.div
+		.row
+			.col-sm-4
+				+cuadros("https://github.com/arabelia/gentleman",'assets/images/gentleman.PNG',"Project layout and design.")
+			.col-sm-4
+				+cuadros("https://github.com/arabelia/primes",'assets/images/primes.PNG',"Project layout and design.")
+			.col-sm-4
+				+cuadros("https://github.com/VivianaRA/Triangle-Theme",'assets/images/triangle.PNG',"Applying libs and effects.")
+		.row
+			.col-sm-1
+			.col-sm-5
+				+cuadros("https://github.com/elizabethqsaico/Lab-LaRepublica",'assets/images/republica.PNG',"Developed team.")
+			.col-sm-5
+				+cuadros("https://github.com/arabelia/escuela-danza",'assets/images/danza.PNG',"Dev.eloped team")
+block contactame
+	+tituloSeccion('C','o','n','t','a','c','t',' ', 'm','e')

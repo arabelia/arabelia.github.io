@@ -1,16 +1,16 @@
 
 .nombre{
-  margin-top: 2em;
+  margin: 3em auto 1em;
   height: 100px;
 }
 .fraseInicial{
    text-shadow: 1px 1px 10px #3D220F;margin: 2em auto;
 }
-.fraseInicial p{font-size: 45px; font-family: 'Poiret One', cursive; color: #fff; border-top:3px solid #fff; margin:auto;}
+.fraseInicial p{font-size: 40px; font-family: 'Poiret One', cursive; color: #fff; border-top:3px solid #fff; margin:auto;}
 .efectoNombre {
 color: #f2f2f2;
 text-shadow: 1px 1px 10px #3D220F;
-font-size: 100px;
+font-size: 90px;
 font-family: 'Unna',"Times New Roman", serif;
 }
 .menu li{
@@ -42,6 +42,7 @@ font-family: 'Unna',"Times New Roman", serif;
   background-image: url('../images/cuerpo3.jpg');
 
 }
+.container{width: 90%;}
 
 /*titulo de las secciones*/
 
@@ -49,12 +50,12 @@ font-family: 'Unna',"Times New Roman", serif;
 color: #2D1818;
 /*color: #212020;*/
 text-shadow: 2px 2px 10px #A19999;
-font-size: 50px;
+font-size: 45px;
 font-family: 'Unna', "Times New Roman", serif;
 }
 
 .sobreMi{
-  width: 70%; margin:auto;   font-size: 20px; padding: 0.5em 0; font-weight: bold;
+  width: 70%; margin:auto;   font-size: 22px; padding: 0.5em 0; font-weight: bold;
 }
 
 /*foto*/
@@ -78,16 +79,18 @@ font-family: 'Unna', "Times New Roman", serif;
 }
 
 /*intereses*/
-.interes1,.interes3 p{font-size: 35px; font-family: 'Dancing Script', cursive; vertical-align: middle; margin: 1.5em 0 0.5em}
-.interes4 p{font-size: 35px; font-family: "courier","Monaco",serif; font-weight: bold;}
-.interes5 p{font-size: 45px; font-family: 'Poiret One', cursive;}
-.interes6 p{font-size: 35px; font-family: 'Dancing Script', cursive;}
+.interes1,.interes3 p{font-size: 30px; font-family: 'Dancing Script', cursive; vertical-align: middle; margin: 1.5em 0 0.5em}
+.interes4 p{font-size: 30px; font-family: "courier","Monaco",serif; font-weight: bold;}
+.interes5 p{font-size: 40px; font-family: 'Poiret One', cursive;}
+.interes6 p{font-size: 30px; font-family: 'Dancing Script', cursive;}
 
 /*utilitarios*/
 .centrar{text-align: center;}
 .enlinea{display: inline-block;}
 .espaciado{margin: 2em 0;}
 .courier{font-family: "courier","Monaco",serif;}
+.corrida{font-family: 'Dancing Script', cursive;}
+.poiret{font-family: 'Poiret One', cursive;}
 
 /*efecto de cuadros de portafolios*/
 .cuadros{box-shadow: 5px 5px 18px 1px #B5ACAC; background-color: #fff;margin: 1em;}
@@ -95,13 +98,17 @@ font-family: 'Unna', "Times New Roman", serif;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    -webkit-filter: sepia(0.5); /* 1 = 100% */
+    filter: sepia(0.5);
 }
 .cuadros a{text-decoration: none; }
 .descripcion{color:#111; font-family: 'Dancing Script', cursive; serif; font-size: 18px; padding:0.5em 0;  }
 .cuadros img:hover{
-    -webkit-transform: rotate(-4deg);
-    -moz-transform: rotate(-4deg);
-    -o-transform: rotate(-4deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -webkit-filter: sepia(0); /* 1 = 100% */
+    filter: sepia(0);
 }
 .cuadros:hover{
     -webkit-transform: scale(1.01);
@@ -115,7 +122,7 @@ font-family: 'Unna', "Times New Roman", serif;
 /*efectos de contacto*/
 .forma1 {font-size: 40px; font-weight: 200;  font-weight:bold}
 .tam1{width: 30px; }
-.correo {font-size: 25px;  font-weight:bold;}
+.correo {font-size: 20px;  font-weight:bold;}
 .contacto {width: 60px; height: 60px; margin: 0.5em;}
 .contacto img{ border-radius: 50%;}
 /*.contactos{background-image: url('../images/pie.jpg')}*/
@@ -167,9 +174,9 @@ body{
     opacity: 0.2;
     height: 50px;
     width: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
     cursor: help;
     
 }
@@ -180,7 +187,7 @@ body{
     opacity: 0.1;
     height: 50px;
     width: 50px;
-    -webkit-border-radius: 50px;
+    -webkit-border-radius: 0px;
     -moz-border-radius: 50px;
     border-radius: 50px;
     cursor: help;
@@ -200,22 +207,22 @@ body{
     -moz-border-radius: 50px;
     border-radius: 50px;
     animation-name: bubbleSmall;
-    animation-duration: 2s;
+    animation-duration: 3.5s;
     animation-direction: linear;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: bubbleSmall;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 3.5s;
     -webkit-animation-direction: linear;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: bubbleSmall;
-    -moz-animation-duration: 2s;
+    -moz-animation-duration: 3.5s;
     -moz-animation-direction: linear;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -o-animation-name: bubbleSmall;
-    -o-animation-duration: 2s;
+    -o-animation-duration: 3.5s;
     -o-animation-direction: linear;
     -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
@@ -223,22 +230,22 @@ body{
 }
 
 @keyframes bubbleSmall {
-    0% {opacity: 0.5; top:100%; width:25px;}
+    0% {opacity: 0.5; top:100%; width:40px;}
     100% {opacity: 0.2; top:0%; width:50px;}
 }
 
 @-moz-keyframes bubbleSmall {
-    0% {opacity: 0.5; top:100%; width:25px;}
+    0% {opacity: 0.5; top:100%; width:40px;}
     100% {opacity: 0.2; top:0%; width:50px;}
 }
 
 @-webkit-keyframes bubbleSmall {
-    0% {opacity: 0.5; top:100%; width:25px;}
+    0% {opacity: 0.5; top:100%; width:40px;}
     100% {opacity: 0.2; top:0%; width:50px;}
 }
 
 @-o-keyframes bubbleSmall {
-    0% {opacity: 0.5; top:100%; width:25px;}
+    0% {opacity: 0.5; top:100%; width:40px;}
     100% {opacity: 0.2; top:0%; width:50px;}
 }
 
@@ -255,22 +262,22 @@ body{
     -moz-border-radius: 100px;
     border-radius: 100px;
     animation-name: bubbleMedium;
-    animation-duration: 2.3s;
+    animation-duration: 4s;
     animation-direction: linear;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: bubbleMedium;
-    -webkit-animation-duration: 2.3s;
+    -webkit-animation-duration: 4s;
     -webkit-animation-direction: linear;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: bubbleMedium;
-    -moz-animation-duration: 2.3s;
+    -moz-animation-duration: 4s;
     -moz-animation-direction: linear;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -o-animation-name: bubbleMedium;
-    -o-animation-duration: 2.3s;
+    -o-animation-duration: 4s;
     -o-animation-direction: linear;
     -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
@@ -278,22 +285,22 @@ body{
 }
 
 @keyframes bubbleMedium {
-    0% {opacity: 0.5; top:100%; width:50px;}
+    0% {opacity: 0.5; top:100%; width:80px;}
     100% {opacity: 0.2; top:0%; width:100px;}
 }
 
 @-moz-keyframes bubbleMedium {
-    0% {opacity: 0.5; top:100%; width:50px;}
+    0% {opacity: 0.5; top:100%; width:80px;}
     100% {opacity: 0.2; top:0%; width:100px;}
 }
 
 @-webkit-keyframes bubbleMedium {
-    0% {opacity: 0.5; top:100%; width:50px;}
+    0% {opacity: 0.5; top:100%; width:80px;}
     100% {opacity: 0.2; top:0%; width:100px;}
 }
 
 @-o-keyframes bubbleMedium {
-    0% {opacity: 0.5; top:100%; width:50px;}
+    0% {opacity: 0.5; top:100%; width:80px;}
     100% {opacity: 0.2; top:0%; width:100px;}
 }
 
@@ -309,22 +316,22 @@ body{
     -moz-border-radius: 200px;
     border-radius: 200px;
     animation-name: bubbleLarge;
-    animation-duration: 4s;
+    animation-duration: 4.5s;
     animation-direction: linear;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: bubbleLarge;
-    -webkit-animation-duration: 4s;
+    -webkit-animation-duration: 4.5s;
     -webkit-animation-direction: linear;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: bubbleLarge;
-    -moz-animation-duration: 4s;
+    -moz-animation-duration: 4.5s;
     -moz-animation-direction: linear;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -o-animation-name: bubbleLarge;
-    -o-animation-duration: 4s;
+    -o-animation-duration: 4.5s;
     -o-animation-direction: linear;
     -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
@@ -332,167 +339,167 @@ body{
 }
 
 @keyframes bubbleLarge {
-    0% {opacity: 1.0; top:100%; width:100px;}
+    0% {opacity: 0.8; top:100%; width:180px;}
     100% {opacity: 0.2; top:0%; width:200px;}
 }
 
 @-moz-keyframes bubbleLarge {
-    0% {opacity: 1.0; top:100%; width:100px;}
+    0% {opacity: 0.8; top:100%; width:180px;}
     100% {opacity: 0.2; top:0%; width:200px;}
 }
 
 @-webkit-keyframes bubbleLarge {
-    0% {opacity: 1.0; top:100%; width:100px;}
+    0% {opacity: 0.8; top:100%; width:180px;}
     100% {opacity: 0.2; top:0%; width:200px;}
 }
 
 @-o-keyframes bubbleLarge {
-    0% {opacity: 1.0; top:100%; width:100px;}
+    0% {opacity: 0.8; top:100%; width:180px;}
     100% {opacity: 0.2; top:0%; width:200px;}
 }
 
 .bubbleLarge:nth-child(1){
     left:45%;
-    animation-delay: .3s;
-    -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
-    -o-animation-delay: .3s;
-}
-
-.bubbleLarge:nth-child(2){
-    left:75%;
     animation-delay: .6s;
     -webkit-animation-delay: .6s;
     -moz-animation-delay: .6s;
     -o-animation-delay: .6s;
 }
 
+.bubbleLarge:nth-child(2){
+    left:75%;
+    animation-delay: .2;
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    -o-animation-delay: .3s;
+}
+
 .bubbleLarge:nth-child(3){
     left:5%;
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -o-animation-delay: .1s;
+}
+
+.bubbleLarge:nth-child(4){
+    left:25% !important;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.bubbleLarge:nth-child(5){
+    left:90%;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+}
+
+.bubbleMedium:nth-child(6){
+    left:90%;
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -o-animation-delay: .2s;
+}
+
+.bubbleMedium:nth-child(7){
+    left:35%;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+}
+
+.bubbleMedium:nth-child(8){
+    left:65%;
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     -o-animation-delay: 1s;
 }
 
-.bubbleLarge:nth-child(4){
-    left:25% !important;
-    animation-delay: 1.2s;
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    -o-animation-delay: 1.2s;
-}
-
-.bubbleLarge:nth-child(5){
-    left:90%;
-    animation-delay: 1.6s;
-    -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    -o-animation-delay: 1.6s;
-}
-
-.bubbleMedium:nth-child(6){
-    left:90%;
-    animation-delay: 1.4s;
-    -webkit-animation-delay: 1.4s;
-    -moz-animation-delay: 1.4s;
-    -o-animation-delay: 1.4s;
-}
-
-.bubbleMedium:nth-child(7){
-    left:35%;
-    animation-delay: .4s;
-    -webkit-animation-delay: .4s;
-    -moz-animation-delay: .4s;
-    -o-animation-delay: .4s;
-}
-
-.bubbleMedium:nth-child(8){
-    left:65%;
-    animation-delay: .3s;
-    -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
-    -o-animation-delay: .3s;
-}
-
 .bubbleMedium:nth-child(9){
     left:75%;
-    animation-delay: .4s;
-    -webkit-animation-delay: .4s;
-    -moz-animation-delay: .4s;
-    -o-animation-delay: .4s;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s
 }
 
 .bubbleMedium:nth-child(10){
     left:15%;
-    animation-delay: .5s;
-    -webkit-animation-delay: .5s;
-    -moz-animation-delay: .5s;
-    -o-animation-delay: .5s;
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -o-animation-delay: .1s;
 }
 
 .bubbleSmall:nth-child(11){
     left:30%;
-    animation-delay: .2s;
-    -webkit-animation-delay: .2s;
-    -moz-animation-delay: .2s;
-    -o-animation-delay: .2s;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
 }
 
 .bubbleSmall:nth-child(12){
     left:40%;
-    animation-delay: .3s;
-    -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
-    -o-animation-delay: .3s;
+    animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+    -moz-animation-delay: 2.5s;
+    -o-animation-delay: 2.5s;
 }
 
 .bubbleSmall:nth-child(13){
     left:25%;
-    animation-delay: .2s;
-    -webkit-animation-delay: .2s;
-    -moz-animation-delay: .2s;
-    -o-animation-delay: .2s;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
 }
 
 .bubbleSmall:nth-child(14){
     left:10%;
-    animation-delay: .1s;
-    -webkit-animation-delay: .1s;
-    -moz-animation-delay: .1s;
-    -o-animation-delay: .1s;
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -o-animation-delay: .4s;
 }
 
 .bubbleSmall:nth-child(15){
     left:20%;
-    animation-delay: .3s;
-    -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
-    -o-animation-delay: .3s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
 }
 
 .bubbleSmall:nth-child(16){
     left:60%;
-    animation-delay: .1s;
-    -webkit-animation-delay: .1s;
-    -moz-animation-delay: .1s;
-    -o-animation-delay: .1s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
 }
 
 .bubbleSmall:nth-child(17){
     left:70%;
-    animation-delay: .3s;
-    -webkit-animation-delay: .3s;
-    -moz-animation-delay: .3s;
-    -o-animation-delay: .3s;
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -o-animation-delay: .6s;
 }
 
 .bubbleSmall:nth-child(18){
     left:55%;
-    animation-delay: .1s;
-    -webkit-animation-delay: .1s;
-    -moz-animation-delay: .1s;
-    -o-animation-delay: .1s;
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -o-animation-delay: .2s;
 }
 
 .bubbleSmall:nth-child(19){
