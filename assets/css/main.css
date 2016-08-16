@@ -560,8 +560,119 @@ body{
 .nombre{ margin: 1em auto;}
 .fraseInicial{margin-top: 0;}
 .fraseInicial p{font-size: 30px;}
-.efectoNombre {font-size: 50px;}
+.efectoNombre {font-size: 80px;}
 .foto img{  width: 280px; margin-top: 0.5em; margin-left: -0.5em;}
 .container{width: 98%;}
 #blur, #portada{height: 500px;}
+
+/*tamaño de las burbujas*/
+.bubbleLarge {
+    height: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px;    
 }
+.bubbleMedium {
+    height: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;    
+}
+.bubbleSmall {
+    height: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;    
+}
+
+/*burbujas pequeñas*/
+@keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:40px;}
+    100% {opacity: 0.2; top:0%; width:50px;}
+}
+
+@-moz-keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:40px;}
+    100% {opacity: 0.2; top:0%; width:50px;}
+}
+
+@-webkit-keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:40px;}
+    100% {opacity: 0.2; top:0%; width:50px;}
+}
+
+@-o-keyframes bubbleSmall {
+    0% {opacity: 0.5; top:100%; width:40px;}
+    100% {opacity: 0.2; top:0%; width:50px;}
+}
+
+/*burbujas medianas*/
+@keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:74px;}
+    100% {opacity: 0.2; top:0%; width:80px;}
+}
+
+@-moz-keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:74px;}
+    100% {opacity: 0.2; top:0%; width:80px;}
+}
+
+@-webkit-keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:74px;}
+    100% {opacity: 0.2; top:0%; width:80px;}
+}
+
+@-o-keyframes bubbleMedium {
+    0% {opacity: 0.5; top:100%; width:74px;}
+    100% {opacity: 0.2; top:0%; width:80px;}
+}
+
+/*burnujas grandes*/
+@keyframes bubbleLarge {
+    0% {opacity: 0.8; top:100%; width:140px;}
+    100% {opacity: 0.2; top:0%; width:150px;}
+}
+
+@-moz-keyframes bubbleLarge {
+    0% {opacity: 0.8; top:100%; width:140px;}
+    100% {opacity: 0.2; top:0%; width:150px;}
+}
+
+@-webkit-keyframes bubbleLarge {
+    0% {opacity: 0.8; top:100%; width:140px;}
+    100% {opacity: 0.2; top:0%; width:150px;}
+}
+
+@-o-keyframes bubbleLarge {
+    0% {opacity: 0.8; top:100%; width:140px;}
+    100% {opacity: 0.2; top:0%; width:150px;}
+}
+
+}
+
+@media(max-width: 400px){
+    .foto img{  width: 200px;}
+    .fraseInicial p{font-size: 20px;}
+    .efectoNombre {font-size: 60px;}
+    .efectoSeccion{ font-size: 35px; }
+    .interes1,.interes3 p{font-size: 20px;}
+    .interes4 p{font-size: 20px;}
+    .interes5 p{font-size: 30px;}
+    .interes6 p{font-size: 20px;}
+    .sobreMi{width: 80%; font-size: 18px;}
+}
+
+@media(max-width: 300px){
+    .foto img{ width: 50px; display: none;}
+    .fraseInicial p{font-size: 15px;}
+    .efectoNombre {font-size: 50px;}
+    .efectoSeccion{ font-size: 28px; }
+    .correo {font-size: 15px;}
+    .interes1,.interes3 p{font-size: 18px;}
+    .interes4 p{font-size: 18px;}
+    .interes5 p{font-size: 22px;}
+    .interes6 p{font-size: 18px;}
+    .sobreMi{width: 90%; font-size: 15px;}
+}
+}
+
