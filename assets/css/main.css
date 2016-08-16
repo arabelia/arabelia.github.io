@@ -59,7 +59,7 @@ font-family: 'Unna', "Times New Roman", serif;
 }
 
 /*foto*/
-.foto img{  width: 250px;  border: 7px solid #fff; box-shadow: 3px 3px 4px #391D0A;}
+.foto img{  width: 500px; margin-top: 1em;}
 .rotar{
   -webkit-transform: rotateZ(-10deg);
   -moz-transform: rotateZ(-20deg);
