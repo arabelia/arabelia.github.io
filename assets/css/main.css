@@ -655,10 +655,10 @@ body{
     .fraseInicial p{font-size: 20px;}
     .efectoNombre {font-size: 60px;}
     .efectoSeccion{ font-size: 35px; }
-    .interes1,.interes3 p{font-size: 20px;}
-    .interes4 p{font-size: 20px;}
-    .interes5 p{font-size: 30px;}
-    .interes6 p{font-size: 20px;}
+    .interes1,.interes3 p{font-size: 18px;}
+    .interes4 p{font-size: 18px;}
+    .interes5 p{font-size: 25px;}
+    .interes6 p{font-size: 18px;}
     .sobreMi{width: 80%; font-size: 18px;}
 }
 
@@ -668,11 +668,25 @@ body{
     .efectoNombre {font-size: 50px;}
     .efectoSeccion{ font-size: 28px; }
     .correo {font-size: 15px;}
-    .interes1,.interes3 p{font-size: 18px;}
-    .interes4 p{font-size: 18px;}
-    .interes5 p{font-size: 22px;}
-    .interes6 p{font-size: 18px;}
+    .interes1,.interes3 p{font-size: 15px;}
+    .interes4 p{font-size: 15px;}
+    .interes5 p{font-size: 20px;}
+    .interes6 p{font-size: 15px;}
     .sobreMi{width: 90%; font-size: 15px;}
-}
+    /*reloj*/
+    /*efecto prueba reloj*/
+    .reloj{width: 150; height: 150px;}
+    .hand {
+      left: 50%;
+      top: 50px;
+    }
+    .base{width: 150px;}
+    .base img{width: 150px; left:50%; margin-left: -75px;}
+
+    .seconds img{ margin-top: -30px; width: 6px; height: 50px; }
+
+    .mins img{ margin-top: -18px; margin-left:-4px; width: 8px; height: 35px; }
+
+    .hours img { width: 10px; height: 25px; }
 }
 
