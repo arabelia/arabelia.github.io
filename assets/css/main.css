@@ -552,3 +552,14 @@ body{
   width: 12px;
   height: 30px;
 }
+
+/*responsive*/
+@media (max-width: 700px){
+.nombre{ margin: 1em auto;}
+.fraseInicial{margin-top: 0;}
+.fraseInicial p{font-size: 30px;}
+.efectoNombre {font-size: 50px;}
+.foto img{  width: 300px; margin-top: 1em;}
+.container{width: 98%;}
+#portada { height: 500px;}
+}
