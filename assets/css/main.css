@@ -24,7 +24,9 @@ font-family: 'Unna',"Times New Roman", serif;
   font-weight: bold;
   color:#fff;
 }
-.menu img{width: 30px;}
+.menu a:hover{ font-size: 17px; text-shadow: 1px 1px 10px #160808;}
+.menu img{width: 30px;border:1px solid #fff;}
+.menu img:hover{box-shadow: 1px 1px 10px #160808;}
 .separadorPortada img{
   margin: auto; width: 40%;
   -webkit-filter: invert(100%);
@@ -663,25 +665,7 @@ body{
     .sobreMi{width: 80%; font-size: 18px;}
     .espaciado{margin: 1.5em 0;}
     .nombre{ margin: 2em auto 0.9em; height: 80px;}
-    /*tamaño portada*/
-    #blur, #portada{height: 420px;}
-#show { height: 20px; width: 20px;}
-#hide { height: 20px; width: 20px;}
-}
 
-@media(max-width: 300px){
-    .foto img{ width: 50px; display: none;}
-    .fraseInicial p{font-size: 15px; margin-top: 0.5em;}
-    .efectoNombre {font-size: 50px;}
-    .efectoSeccion{ font-size: 28px; }
-    .correo {font-size: 15px;}
-    .interes1,.interes3 p{font-size: 15px;}
-    .interes4 p{font-size: 15px;}
-    .interes5 p{font-size: 20px;}
-    .interes6 p{font-size: 15px;}
-    .sobreMi{width: 90%; font-size: 15px;}
-    .espaciado{margin: 1em 0;}
-    .nombre{ margin: 1em auto 0.5em; height: 50px;}
     /*reloj*/
     /*efecto prueba reloj*/
     .reloj{width: 150; height: 150px;}
@@ -717,6 +701,11 @@ body{
         -moz-border-radius: 30px;
         border-radius: 30px;    
     }
+
+    /*tamaño portada*/
+    #blur, #portada{height: 410px;}
+    #show { height: 20px; width: 20px;}
+    #hide { height: 20px; width: 20px;}
 
     /*burbujas pequeñas*/
     @keyframes bubbleSmall {
@@ -781,5 +770,21 @@ body{
         100% {opacity: 0.2; top:0%; width:100px;}
     }
 
+}
+
+@media(max-width: 300px){
+    .foto img{ width: 50px; display: none;}
+    .fraseInicial p{font-size: 15px; margin-top: 0.5em;}
+    .efectoNombre {font-size: 50px;}
+    .efectoSeccion{ font-size: 28px; }
+    .correo {font-size: 15px;}
+    .interes1,.interes3 p{font-size: 15px;}
+    .interes4 p{font-size: 15px;}
+    .interes5 p{font-size: 20px;}
+    .interes6 p{font-size: 15px;}
+    .sobreMi{width: 90%; font-size: 15px;}
+    .espaciado{margin: 1em 0;}
+    .nombre{ margin: 1em auto 0.5em; height: 50px;}
+    
 }
 
