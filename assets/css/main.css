@@ -161,9 +161,11 @@ body{
     -o-background-size: cover;
     background-size: cover;
     position: fixed;
-    top:0px;
-    left:0px;
-    height: 100%;
+/*    top:0px;
+    left:0px;*/
+    margin: 0px;
+    padding: 0px;
+    height: 700px;
     width: 100%;
     z-index: -1;
 }
@@ -559,7 +561,7 @@ body{
 .fraseInicial{margin-top: 0;}
 .fraseInicial p{font-size: 30px;}
 .efectoNombre {font-size: 50px;}
-.foto img{  width: 300px; margin-top: 1em;}
+.foto img{  width: 280px; margin-top: 0.5em; margin-left: -0.5em;}
 .container{width: 98%;}
-#portada { height: 500px;}
+#blur, #portada{height: 500px;}
 }
