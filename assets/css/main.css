@@ -563,9 +563,10 @@ body{
 .efectoNombre {font-size: 80px;}
 .foto img{  width: 280px; margin-top: 0.5em; margin-left: -0.5em;}
 .container{width: 98%;}
-#blur, #portada{height: 500px;}
+
 
 /*tamaño de las burbujas*/
+#blur, #portada{height: 500px;}
 .bubbleLarge {
     height: 150px;
     -webkit-border-radius: 150px;
@@ -660,11 +661,17 @@ body{
     .interes5 p{font-size: 25px;}
     .interes6 p{font-size: 18px;}
     .sobreMi{width: 80%; font-size: 18px;}
+    .espaciado{margin: 1.5em 0;}
+    .nombre{ margin: 2em auto 0.9em; height: 80px;}
+    /*tamaño portada*/
+    #blur, #portada{height: 420px;}
+#show { height: 20px; width: 20px;}
+#hide { height: 20px; width: 20px;}
 }
 
 @media(max-width: 300px){
     .foto img{ width: 50px; display: none;}
-    .fraseInicial p{font-size: 15px;}
+    .fraseInicial p{font-size: 15px; margin-top: 0.5em;}
     .efectoNombre {font-size: 50px;}
     .efectoSeccion{ font-size: 28px; }
     .correo {font-size: 15px;}
@@ -673,6 +680,8 @@ body{
     .interes5 p{font-size: 20px;}
     .interes6 p{font-size: 15px;}
     .sobreMi{width: 90%; font-size: 15px;}
+    .espaciado{margin: 1em 0;}
+    .nombre{ margin: 1em auto 0.5em; height: 50px;}
     /*reloj*/
     /*efecto prueba reloj*/
     .reloj{width: 150; height: 150px;}
@@ -682,11 +691,95 @@ body{
     }
     .base{width: 150px;}
     .base img{width: 150px; left:50%; margin-left: -75px;}
-
     .seconds img{ margin-top: -30px; width: 6px; height: 50px; }
-
     .mins img{ margin-top: -18px; margin-left:-4px; width: 8px; height: 35px; }
-
     .hours img { width: 10px; height: 25px; }
+
+    /*tamaño de las burbujas*/
+    #blur, #portada{height: 350px;}
+    #show { height: 20px; width: 10px;}
+    #hide { height: 20px; width: 10px;}
+    .bubbleLarge {
+        height: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;    
+    }
+    .bubbleMedium {
+        height: 60px;
+        -webkit-border-radius: 60px;
+        -moz-border-radius: 60px;
+        border-radius: 60px;    
+    }
+    .bubbleSmall {
+        height: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;    
+    }
+
+    /*burbujas pequeñas*/
+    @keyframes bubbleSmall {
+        0% {opacity: 0.5; top:100%; width:25px;}
+        100% {opacity: 0.2; top:0%; width:30px;}
+    }
+
+    @-moz-keyframes bubbleSmall {
+        0% {opacity: 0.5; top:100%; width:25px;}
+        100% {opacity: 0.2; top:0%; width:30px;}
+    }
+
+    @-webkit-keyframes bubbleSmall {
+        0% {opacity: 0.5; top:100%; width:25px;}
+        100% {opacity: 0.2; top:0%; width:30px;}
+    }
+
+    @-o-keyframes bubbleSmall {
+        0% {opacity: 0.5; top:100%; width:25px;}
+        100% {opacity: 0.2; top:0%; width:30px;}
+    }
+
+    /*burbujas medianas*/
+    @keyframes bubbleMedium {
+        0% {opacity: 0.5; top:100%; width:55px;}
+        100% {opacity: 0.2; top:0%; width:60px;}
+    }
+
+    @-moz-keyframes bubbleMedium {
+        0% {opacity: 0.5; top:100%; width:55px;}
+        100% {opacity: 0.2; top:0%; width:60px;}
+    }
+
+    @-webkit-keyframes bubbleMedium {
+        0% {opacity: 0.5; top:100%; width:55px;}
+        100% {opacity: 0.2; top:0%; width:60px;}
+    }
+
+    @-o-keyframes bubbleMedium {
+        0% {opacity: 0.5; top:100%; width:55px;}
+        100% {opacity: 0.2; top:0%; width:60px;}
+    }
+
+    /*burnujas grandes*/
+    @keyframes bubbleLarge {
+        0% {opacity: 0.8; top:100%; width:90px;}
+        100% {opacity: 0.2; top:0%; width:100px;}
+    }
+
+    @-moz-keyframes bubbleLarge {
+        0% {opacity: 0.8; top:100%; width:90px;}
+        100% {opacity: 0.2; top:0%; width:100px;}
+    }
+
+    @-webkit-keyframes bubbleLarge {
+        0% {opacity: 0.8; top:100%; width:90px;}
+        100% {opacity: 0.2; top:0%; width:100px;}
+    }
+
+    @-o-keyframes bubbleLarge {
+        0% {opacity: 0.8; top:100%; width:90px;}
+        100% {opacity: 0.2; top:0%; width:100px;}
+    }
+
 }
 
