@@ -13,20 +13,20 @@ text-shadow: 1px 1px 10px #3D220F;
 font-size: 90px;
 font-family: 'Unna',"Times New Roman", serif;
 }
-.menu li{
+#menu li{
   margin-top: 1em;
-  /*padding: 1em;*/
 }
-.menu a{
+#menu a{
   padding: 1em;
-  font-size: 16px; 
+  font-size: 17px; 
   text-decoration: none;
+  text-shadow: 1px 1px 5px #160808;
   font-weight: bold;
   color:#fff;
 }
-.menu a:hover{ font-size: 17px; text-shadow: 1px 1px 10px #160808;}
-.menu img{width: 30px;border:1px solid #fff;}
-.menu img:hover{box-shadow: 1px 1px 10px #160808;}
+#menu a:hover{ font-size: 18px; text-shadow: 1px 1px 15px #111;}
+#menu img{width: 30px;border:1px solid #fff;}
+#menu img:hover{box-shadow: 1px 1px 10px #160808;}
 .separadorPortada img{
   margin: auto; width: 40%;
   -webkit-filter: invert(100%);
