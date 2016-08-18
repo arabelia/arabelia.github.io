@@ -558,14 +558,18 @@ body{
 }
 
 /*responsive*/
+@media(max-width: 1090px){
+    .foto img{  width: 450px; margin-top:4em;}
+}
 
 @media (max-width: 700px){
     .nombre{ margin: 1em auto;}
     .fraseInicial{margin-top: 0;}
     .fraseInicial p{font-size: 30px;}
     .efectoNombre {font-size: 80px;}
-    .foto img{  width: 400px; margin-top: 2em; margin-left: -0.8em;}
+    .foto img{  width: 350px; margin-top: 2em; margin-left: -0.8em;}
     .container{width: 98%;}
+    #menu a{padding: 1em; font-size: 13px;}
 
 
     /*tamaño de las burbujas*/
@@ -654,12 +658,7 @@ body{
 
 }
 
-@media(max-width: 1090px){
-    .foto img{  width: 450px; margin-top:4em;}
-}
-@media(max-width: 700px){
-    .foto img{  width: 350px; margin-top:1em;}
-}
+
 @media(max-width: 400px){
     .foto img{  width: 220px; margin-top:1em;}
     .fraseInicial p{font-size: 20px;}
@@ -672,6 +671,7 @@ body{
     .sobreMi{width: 80%; font-size: 18px;}
     .espaciado{margin: 1.5em 0;}
     .nombre{ margin: 2em auto 0.9em; height: 80px;}
+    #menu a{padding: 0.5em; font-size: 10px;}
 
     /*reloj*/
     /*efecto prueba reloj*/
@@ -781,6 +781,7 @@ body{
 
 @media(max-width: 300px){
     .foto img{ width: 50px; display: none;}
+    #menu a{padding: 0.5em; font-size: 8px;}
     .fraseInicial p{font-size: 15px; margin-top: 0.5em;}
     .efectoNombre {font-size: 50px;}
     .efectoSeccion{ font-size: 28px; }
