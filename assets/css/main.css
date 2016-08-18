@@ -6,7 +6,7 @@
 .fraseInicial{
    text-shadow: 1px 1px 10px #3D220F;margin: 2em auto;
 }
-.fraseInicial p{font-size: 40px; font-family: 'Poiret One', cursive; color: #fff; border-top:3px solid #fff; margin:auto;}
+.fraseInicial p{font-size: 40px; font-family: 'Poiret One', "Times New Roman"; color: #fff; border-top:3px solid #fff; margin:auto;}
 .efectoNombre {
 color: #f2f2f2;
 text-shadow: 1px 1px 10px #3D220F;
@@ -91,8 +91,8 @@ font-family: 'Unna', "Times New Roman", serif;
 .enlinea{display: inline-block;}
 .espaciado{margin: 2em 0;}
 .courier{font-family: "courier","Monaco",serif;}
-.corrida{font-family: 'Dancing Script', cursive;}
-.poiret{font-family: 'Poiret One', cursive;}
+.corrida{font-family: 'Dancing Script', "Times New Roman";}
+.poiret{font-family: 'Poiret One', "Times New Roman";}
 
 /*efecto de cuadros de portafolios*/
 .cuadros{box-shadow: 5px 5px 18px 1px #B5ACAC; background-color: #fff;margin: 1em;}
